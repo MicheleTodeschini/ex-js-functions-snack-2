@@ -6,6 +6,7 @@ Poi, definisci la stessa funzione somma ma come funzione anonima assegnata a una
 
 Quindi, riscrivi la funzione somma con la sintassi delle arrow functions. */
 
+//dichiarativa
 console.log('funzia');
 
 function somma(num1, num2) {
@@ -15,3 +16,16 @@ function somma(num1, num2) {
 
 
 console.log(somma(3, 4));
+
+//anonima
+const sommaAnonima = function (num1, num2) {
+    return num1 + num2
+}
+
+console.log(sommaAnonima(3, 4));
+
+//Arrow function
+const funzAnonima = (num1, num2) => num1 + num2
+
+console.log(funzAnonima(5, 9));
+
