@@ -7,11 +7,15 @@ Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuo
 /* const tempo = prompt('Inserisci millisecondi')
 console.log(tempo); */
 
-function tempoScaduto() {
-    console.log("tempo scaduto");
+function creaTimer(tempo) {
+    return () => {
+        setTimeout(() => {
+            console.log('tempo scaduto');
+
+        }, tempo)
+    }
 }
 
 
-const fine = setTimeout(tempoScaduto, 5000)
-
-
+const timer = creaTimer(2000)
+timer()
