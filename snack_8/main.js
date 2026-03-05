@@ -22,4 +22,3 @@ function contoAllaRovescia(num) {
 }
 
 contoAllaRovescia(5)
-
