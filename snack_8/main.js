@@ -7,22 +7,17 @@ Scrivi una funzione contoAllaRovescia che accetta un numero n e stampa il conto 
 function contoAllaRovescia(num) {
     //console.log(num);
 
+    let numero = setInterval(() => {
+        console.log(num);
+        num = num - 1
+        if (num === 0) {
+            clearInterval(numero)
+            console.log('tempo scaduto');
 
+        }
 
-    setTimeout(() => {
-        let numero = setInterval(() => {
-            console.log(num);
-            num = num - 1
-            if (num === 0) {
-                clearInterval(numero)
-                console.log('tempo scaduto');
+    }, 1000)
 
-            }
-
-        }, 1000)
-
-
-    })
 
 }
 
