@@ -22,3 +22,19 @@ function eseguiEferma(messaggio, tempoAvvio, tempoStop) {
 }
 
 eseguiEferma("Ciao a tutti", 2000, 5000);
+
+function eseguiEferma(messaggio, tempoAvvio, tempoStop) {
+    setTimeout(() => {
+        const intervallo = setInterval(() => {
+            console.log(messaggio);
+
+        }, 1000)
+        setTimeout(() => {
+            clearInterval(intervallo)
+            console.log('finito');
+
+        }, tempoStop)
+    }, tempoAvvio)
+}
+
+eseguiEferma("gasing", 1000, 6000)
